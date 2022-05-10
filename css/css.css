@@ -1,0 +1,556 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #dcd9c9;
+}
+
+
+/*Header*/
+
+#mynav {
+    background-color: #4e1710;
+}
+
+#logoimg {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.logo {
+    background-color: #4e1710;
+    width: auto;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.itens {
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-left: 10%;
+    font-size: 25px;
+    color: #f78b1f;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f78b1f;
+}
+
+button {
+    color: #f78b1f;
+    border-color: #f78b1f;
+}
+
+.dropdown-item a {
+    color: #92aacd;
+}
+
+
+/*Fim Header*/
+
+
+/*Mensagem de Boas-Vindas*/
+
+#ola {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 170px;
+}
+
+#cafe {
+    text-decoration: none;
+    color: inherit;
+    color: #4e1710;
+}
+
+#cafe:hover {
+    color: #f78b1f;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.flip-container {
+    perspective: 1000;
+}
+
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 430px;
+    height: 400px;
+}
+
+
+/* define a velocidade da transição */
+
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* esconde o verso durante a animação */
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* frente posicionada sobre o verso */
+
+.front {
+    z-index: 2;
+}
+
+
+/* verso inicialmente escondido */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.ilustracao {
+    width: 430px;
+    height: 400px;
+    cursor: pointer;
+}
+
+
+/*Fim da Mensagem de Boas-Vindas*/
+
+
+/*Início do Carrossel*/
+
+h2 {
+    color: #f78b1f;
+}
+
+h2:hover {
+    text-shadow: 0.1em 0.1em 0.10em #4e1710;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.cardCarousel-text {
+    color: #fff;
+}
+
+.cardCarousel-title {
+    color: #f78b1f;
+    font-weight: bold;
+}
+
+.cardCarousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cardCarousel:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+#descricao {
+    font-size: 25px;
+}
+
+#descricao:hover {
+    text-shadow: 0.1em 0.1em 1em #f78b1f;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #4e1710;
+}
+
+.card {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.dois {
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*Cardápio*/
+
+.divisor {
+    width: auto;
+    height: 35px;
+    background-color: #f78b1f;
+    margin-top: 0px;
+}
+
+.divisor2 {
+    width: auto;
+    height: 16px;
+    background-color: #F8FFCF;
+    margin-top: 0px;
+}
+
+h3 {
+    color: #4e1710;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+
+.itensCardapio {
+    padding: 10px;
+    margin: 37px;
+    margin-top: 0px;
+}
+
+.cardCardapio {
+    margin-left: 50px;
+    background-color: #FFFAFA;
+}
+
+.imgCardapio {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 17px;
+    margin-top: 10px;
+}
+
+.imgCardapio:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.card-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #4e1710;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 27px;
+}
+
+.card-title:hover {
+    color: #444;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.linha2 {
+    margin-top: 1.5px;
+}
+
+
+/*Fim Cardpio*/
+
+
+/*Sobre a Empresa*/
+
+.marrom {
+    background-color: #E6D9C3;
+}
+
+.sobre-title {
+    font-size: 37px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #4e1710;
+}
+
+.sobre1 {
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.sobre1:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+.infos {
+    color: #444;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sobre2 {
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 50%;
+    margin-left: 40%;
+}
+
+.sobre2:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+.sobre3 {
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.sobre3:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+
+/*Fim Sobre a Empresa*/
+
+
+/*Fotos da Empresa*/
+
+.fotosEmpresa {
+    width: 300px;
+    height: 200px;
+    cursor: zoom-in;
+}
+
+.fotosEmpresa:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+
+/*Fim de Fotos da Empresa*/
+
+
+/*Depoimentos | Espaço do Cliente*/
+
+.clientes1 {
+    width: 300px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.clientes1:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.clientes2 {
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+.clientes2:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.clientes4 {
+    width: 400px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.clientes4:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.coment1 {
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 50px;
+}
+
+.coment1:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+.coment2 {
+    background-color: transparent;
+    border: 1px solid #727070;
+    background-clip: border-box;
+    border-radius: 50rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 80%;
+    margin-left: 0%;
+}
+
+.coment2:hover {
+    background-color: #70453f26;
+    -webkit-transition: all 0.45s ease 0s;
+    color: #4e1710;
+}
+
+.autor {
+    margin-left: 150px;
+}
+
+
+/*Formulário*/
+
+.fundo-branco {
+    background-color: #FFFAFA;
+}
+
+.formulario {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #444;
+}
+
+.formu {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+}
+
+.formu:hover {
+    color: #4e1710;
+}
+
+#message {
+    width: 430px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    padding: 4px;
+    transition: all .2s ease-in-out;
+}
+
+#message:hover {
+    top: -10px;
+}
+
+
+/*Fim de Depoimentos*/
+
+
+/*Contato*/
+
+#contato {
+    background-color: #4e1710;
+    padding: 15px;
+}
+
+.redes {
+    width: 70px;
+    height: 50px;
+}
+
+.redes:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+.links {
+    text-decoration: none;
+    color: inherit;
+    color: #f78b1f;
+}
+
+.links:hover {
+    color: #f78b1f86;
+    font-size: 18px;
+    -webkit-transition: all 0.45s ease 0s;
+}
+
+#linha-vertical {
+    height: 150px;
+    border-left: 2px solid #f78b1f;
+    margin-left: 150px;
+}
+
+#app {
+    width: 250px;
+    height: 250px;
+}
+
+hr {
+    color: #f78b1f;
+}
+
+.copy {
+    text-align: center;
+    font-size: 20px;
+    color: #f78b1f;
+}
+
+
+/*Fim de Contato*/
+
+
+/*Voltar ao Topo*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#topo {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*Fim voltar ao Topo*/

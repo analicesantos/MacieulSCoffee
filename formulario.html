@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/css.css">
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <!--Icon-->
+        <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" />
+        <title>Macieul's Coffee</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" id="mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="formulario.html"><img src="img/logo.png" id="logoimg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse itens" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarSite">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#cardapio">Cardápio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            A Empresa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html#sobre-a-empresa">Sobre a Empresa</a></li>
+                            <li><a class="dropdown-item" href="index.html#fotos-da-empresa">Fotos da Empresa</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="formulario.html">Depoimentos</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Procure seu Café!" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                    </form>
+                    </div>
+                </div>
+            </nav>  
+        <header>
+
+        <main>
+            <!--Mensagem de Boas-Vindas-->
+            <div class="marrom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">  	
+                                <div class="flipper">  		
+                                    <div class="front">  			
+                                        <img src="img/desenhos/i2.png" alt="" class="ilustracao">	
+                                    </div>  		
+                                    <div class="back">  			
+                                        <img src="img/desenhos/i4.png" alt="" class="ilustracao">	
+                                    </div>  	
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-sm">                    
+                            <p id="ola">
+                                Olá, bem-vindo(a) à Macieul's Coffee, <br> aceita um 
+                                <a href="#carouselExampleFade" id="cafe"><b>café</b></a>?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--Fim Mensagem de Boas-Vindas-->
+
+            <div class="divisor"></div>
+
+            <!-- Carousel-->
+            <div class="marrom">
+                <hr>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-item active col-m12">
+                            <img src="img/carrossel/cafe44.png" class="d-block w-100" alt="Imagem de um Mocaccino">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="cardCarousel" style="width: 18rem;">
+                                            <div class="cardCarousel-body">
+                                                <h5 class="cardCarousel-title">DICA:</h5>
+                                                <p class="cardCarousel-text">
+                                                    Biscoitinhos finos deixam a refeição mais requintada.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2>Mocaccino</h2>
+                                        <p id="descricao">
+                                            Calda de chocolate na base da xícara, café expresso, 
+                                            leite e a espuma.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>    
+
+                        <div class="carousel-item">
+                            <img src="img/carrossel/cafe22.png" class="d-block w-100" alt="Imagem de um Café Gelado">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="cardCarousel" style="width: 18rem;">
+                                    <div class="cardCarousel-body">
+                                        <h5 class="cardCarousel-title">DICA:</h5>
+                                        <p class="cardCarousel-text">
+                                            Seu melhor amigo para os dias de calor: rápido, 
+                                            prático e delicioso!
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2>Café Gelado</h2>
+                                <p id="descricao">
+                                    Preparada à base de café, misturado com alimento congelado.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="img/carrossel/cafe33.png" class="d-block w-100" alt="Imagem de um Choconhaque">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="cardCarousel" style="width: 18rem;">
+                                    <div class="cardCarousel-body">
+                                        <h5 class="cardCarousel-title">DICA:</h5>
+                                        <p class="cardCarousel-text">
+                                            Seu consumo é capaz de esquentar o corpo 
+                                            naqueles dias frios.
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2>Choconhaque</h2>
+                                <p id="descricao" class="col s12 m12 l8">
+                                    Chocolate e a sensação calorosa do conhaque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>                       
+                </div>
+                <hr>
+            </div>
+            <!-- /.carousel --> 
+
+            <!--Depoimentos | Espaço do Cliente--> 
+            <div class="divisor" id="depoimentos"></div>
+            <hr>
+            <p class="sobre-title">Depoimentos | Espaço do Cliente</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="coment1">
+                            <p class="infos">"Adoramos o ambiente da Macieul's Coffee
+                                <br>
+                                frequentamos direto o melhor café de Lins."
+                            </p>
+                            <p class="infos autor">-Ana</p>
+                        </div>
+                        <br>
+                        <img class="card-img-top clientes2" src="img/clientes/clientes2.jpg" alt="Imagem de 3 Cafés enviadas por clientes">
+                    </div>    
+                    <div class="col-sm">
+                        <img class="card-img-top clientes1" src="img/clientes/clientes1.jpg" alt="Imagem de 3 Cafés enviadas por clientes">
+                    </div>                             
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="card-img-top clientes4" src="img/clientes/clientes4.jpg" alt="Imagem de 3 Cafés enviadas por clientes">
+                    </div> 
+                    <br>
+                    <div class="col-sm">
+                        <div class="coment2">
+                            <p class="infos">"Cardápio impecável com opções deliciosas.
+                                <br>
+                                E o ambiente é maravilhoso."
+                            </p>
+                            <p class="infos autor">-João</p>
+                        </div>
+                        <br>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="row">
+                    <br>
+                    <div class="col-sm">
+                        <div class="coment1">
+                            <p class="infos">
+                                "A Macieul's Coffee é DEMAISSSS!!!"                                                             
+                            </p>
+                            <p class="infos autor">-Júnior</p>
+                        </div>
+                        <br>
+                    </div>  
+                    <div class="col-sm">
+                        <img class="card-img-top clientes4" src="img/clientes/clientes33.jpg" alt="Imagem de 3 Cafés enviadas por clientes">
+                    </div>                     
+                </div>
+            </div>
+            <br>
+            <hr>
+
+            <!--Formulário-->
+            <div class="marrom">                
+                <div class="divisor" id="depoimentos"></div>
+                <hr>
+                <div class="container">
+                    <p class="infos">Deixe seu Depoimento/Comentário</div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <form class="formulario">                
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Endereço de email:</label>
+                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                                </div>         
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Nome:</label>
+                                    <input type="emform-controlail" class="form-control form-control-lg" placeholder="Seu nome">
+                                </div> 
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Mensagem:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                                </div>                         
+                                <div class="form-group">
+                                    <p>Tem alguma foto em nosso café? Envie-nos</p>                        
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>                      
+                                <br>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Autorizo minha mensagem ser publicada.</label>
+                                </div>
+                                <button type="submit" class="btn btn-warning me-2">Enviar</button>
+                            </form>
+                        </div> 
+                        
+                        <div class="col-sm">
+                            <img class="card-img-top" id="message" src="img/desenhos/message.png" alt="Imagem de 3 Cafés enviadas por clientes">
+                        </div>    
+                    </div>                
+                    <br></br>
+                    <br></br>
+                            
+                </div>
+                <!--Fim do Formulário-->  
+            </div> 
+                <!--Fim dos Depoimentos-->  
+        </main>
+
+        <footer>
+            <!--Contato-->
+            <div id="contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">                
+                            <img src="img/redes-sociais/facebook.png" class="redes">                        
+                                    <a href="https://pt-br.facebook.com/fateclins" class="links">Macieul'S Coffee</a>
+                            </img>
+                            <br>
+                            <img src="img/redes-sociais/instagram.png" class="redes">
+                                <a href="https://www.instagram.com/fateclins" class="links">@macieulSCoffee</a>
+                            </img>
+                            <br>
+                            <img src="img/redes-sociais/twitter.png" class="redes">
+                                <a href="https://twitter.com/fateclins" class="links">@macieulSCoffee</a>
+                            </img>
+                        </div>
+
+                        <div class="col-sm text-center">
+                            <div id="linha-vertical"></div>
+                        </div>
+                        
+                        <div class="col-sm">
+                            <img src="img/redes-sociais/telefone.png" class="redes">
+                                <a href="#" class="links">(14) 3512-3456</a>
+                            </img>
+                            <br>
+                            <img src="img/redes-sociais/whatsapp.png" class="redes">
+                                <a href="#" class="links">(14) 99123-4567</a>
+                            </img>
+                            <br>
+                            <img src="img/redes-sociais/email.png" class="redes">
+                                <a href="mailto:macieulscoffee@hotmail.com" class="links">macieulscoffee@hotmail.com</a>
+                            </img>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copy">
+                    <p>Copyright &copy; 2021 - <b>Analice Santos</b></p>
+                </div>
+                <div id="back-to-top"><img src="img/desenhos/topo.png" id="topo"></div>
+            </div>
+            <!--Fim de Contato-->
+        </footer>
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>     
+        <script src="js/topo.js"></script>
+    </body>
+</html>
